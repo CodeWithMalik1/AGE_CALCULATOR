@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,231,233,1) 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background: linear-gradient(135deg, #e174eb, #ACB6E5);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #459ed6;
+  font-weight: 600;
+  text-shadow: 10px 10px 10px rgba(100, 14, 100, 0.29);
+}
+
+label {
+  font-size: 1.2rem;
+  color: #555;
+ 
+  display: block;
+}
+
+input[type="date"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90%;
+  cursor: pointer;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #839bd7, #ACB6E5);
+  transition: all 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #74ebd5;
+  outline: none;
+  box-shadow: 10px 10px 8px rgba(116, 235, 213, 0.5);
+}
+input:hover{
+  font-weight: 600;
+  cursor: pointer;
+  color: #ccc;
+  background-color: #62d3c4;
+  transform: scale(1.05);
+  box-shadow: 10px 10px 8px rgba(198, 107, 212, 0.5);
+
+}
+
+.check-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #eb74bc, #ACB6E5);
+  color: blanchedalmond;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.check-btn:hover {
+  background-color: #62d3c4;
+  transform: scale(1.05);
+  box-shadow: 10px 10px 8px rgba(198, 107, 212, 0.5);
+}
+
+#display {
+  font-size: 1.1rem;
+  margin-top: 25px;
+  color: #333;
+  min-height: 40px;
+  padding: 15px;
+  text-shadow: 10px 10px 10px rgba(100, 14, 100, 0.29);
+
+
+}
+
+
+@media (max-width: 650px) {
+  body {
+    padding: 20px;
+  }
+
+  .main-container {
+    padding: 30px;
+    max-width: 70%; 
+  
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  input[type="date"],
+  .check-btn {
+    font-size: 1rem;
+  }
+
+  #display {
+    font-size: 1.2rem;
+  }
+}
+
+
